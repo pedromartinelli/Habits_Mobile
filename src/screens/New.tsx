@@ -6,7 +6,7 @@ import colors from 'tailwindcss/colors';
 import { BackButton } from "../components/BackButton";
 import { CheckBox } from "../components/CheckBox";
 
-const availableWeekDays = ['Domingo', 'Segunda-Feira', 'Terça-Feira', 'Quarta-Feira', 'Quinta-Feira', 'Sexta-Feira', 'Sábado']
+const availableWeekDays = ['Domingo', 'Segunda-feira', 'Terça-feira', 'Quarta-feira', 'Quinta-feira', 'Sexta-feira', 'Sábado']
 
 export function New() {
   const [weekDays, setWeekDays] = useState<number[]>([])
@@ -28,7 +28,7 @@ export function New() {
         <BackButton />
 
         <Text className="mt-6 text-white font-extrabold text-3xl">
-          Crias Hábito
+          Criar Hábito
         </Text>
 
         <Text className="mt-6 text-white font-semibold text-base">
@@ -36,7 +36,7 @@ export function New() {
         </Text>
 
         <TextInput
-          className="h-12 pl-4 rounded-lg mt-3 bg-zinc-800 text-white focus:border-2 focus:border-green-600"
+          className="h-12 pl-4 rounded-lg mt-3 bg-zinc-900 text-white border-2 border-zinc-800 focus:border-green-600"
           placeholder='Exercícios, dormir bem, etc...'
           placeholderTextColor={colors.zinc[400]}
         />
