@@ -15,6 +15,7 @@ export function Habit() {
   const { date } = route.params as Params
 
   const parsedDate = dayjs(date);
+
   const dayOfWeek = parsedDate.format('dddd')
   const dayOfMonth = parsedDate.format('DD/MM')
 
